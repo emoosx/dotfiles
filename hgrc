@@ -1,0 +1,11 @@
+[ui]
+username = Kaung Htet Zaw <emoosx@gmail.com>
+verbose = True
+
+[alias]
+latest = log --limit 5
+
+[extensions]
+color =
+graphlog =
+fetch =

@@ -1,0 +1,23 @@
+# zsh
+export ZSH=$HOME/lib/oh-my-zsh
+export ZSH_THEME="arrow"
+export CASE_SENSITIVIE="true"
+export DISABLE_CORRECTION="true"
+source $ZSH/oh-my-zsh.sh
+export zsh_highlight_highlighters_dir=/usr/local/share/zsh-syntax/highlighting/highlighters
+
+# MPI
+export MPICC="/usr/local/bin/mpicc"
+export MPIRUN="/usr/local/bin/mpirun"
+
+# misc
+export EDITOR="vim"
+export GREP_OPTIONS="--color=auto"
+
+# python
+export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
+export WORKON_HOME="$HOME/.virtualenvs"
+source /usr/local/bin/virtualenvwrapper.sh
+
+# android
+export ANDROID_HOME=/usr/local/opt/android-sdk

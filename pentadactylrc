@@ -1,0 +1,27 @@
+set runtimepath=/Users/emoosx/.pentadactyl
+set editor='/usr/local/bin/mvim -f +<line> <file>'
+set followhints=1
+set showtabline=multitab
+set showstatuslinks=command
+set guioptions+=s
+set titlestring="Kaung Htet Zaw"
+colorscheme solarized-dark
+
+" Keep away from pressing shift
+nmap -builtin ; :
+
+map , <Leader>
+
+" toggle {{{
+map -ex <Leader> tt :set showtabline,never
+" }}}
+
+nmap -builtin j 5j
+nmap -builtin k 5k
+nmap -builtin <S-j> gT
+nmap -builtin <S-k> gt
+
+highlight StatusLine -moz-appearance: none !important; font-weight: bold; background: transparent !important; border: 0px !important; min-height: 20px !important; text-shadow: none !important; font: normal 12px/1 "Droid Sans Mono" !important; padding: 3px 0px 3px 5px !important;
+highlight CmdLine    padding: 5px !important; font: normal 12px "Droid Sans Mono" !important;
+highlight CmdOutput  font: normal 12px "Droid Sans Mono" !important;
+highlight CompItem   font: normal 12px "Droid Sans Mono" !important;
