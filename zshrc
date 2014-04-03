@@ -1,6 +1,7 @@
 plugins=(command-coloring pip fabric git)
 
-for file in ~/.{path,exports,localrc};
+
+for file in ~/code/dotfiles/{path,exports,localrc,aliases.zsh};
 do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done

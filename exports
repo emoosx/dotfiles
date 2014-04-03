@@ -1,5 +1,5 @@
 # zsh
-export ZSH=$HOME/lib/oh-my-zsh
+export ZSH=$HOME/repo/oh-my-zsh
 export ZSH_THEME="arrow"
 export CASE_SENSITIVIE="true"
 export DISABLE_CORRECTION="true"
