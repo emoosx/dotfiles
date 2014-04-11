@@ -1,0 +1,11 @@
+:set autoindent
+:set cleanindent
+:set smartindent
+:set ignorecase
+:set number
+
+inoremap kj <Esc>
+noremap <C-c> <C-[>
+noremap! <C-c> <C-[>
+nnoremap J 5j
+nnoremap K 5k
