@@ -12,7 +12,7 @@ export MPICC="/usr/local/bin/mpicc"
 export MPIRUN="/usr/local/bin/mpirun"
 
 # misc
-export EDITOR="vim"
+export EDITOR="mvim -f"
 export GREP_OPTIONS="--color=auto"
 
 # python
@@ -22,3 +22,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # android
 export ANDROID_HOME=/usr/local/opt/android-sdk
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+source $(brew --prefix nvm)/nvm.sh
+
+# java
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
