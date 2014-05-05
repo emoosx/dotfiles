@@ -1,6 +1,7 @@
 export PATH="$HOME/bin"
 export PATH="$PATH:/Users/emoosx/.opam/4.00.1/bin"              # OCaml
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:/usr/local/opt/ruby/bin"
+export PATH="$PATH:/usr/local/opt/mysql/bin"
 export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"     # GNU stuffs
 export PATH="$PATH:/usr/local/Cellar/go/1.2/libexec/bin"
 export PATH="$PATH:/usr/local/heroku/bin"                       # heroku
