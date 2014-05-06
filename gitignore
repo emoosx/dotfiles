@@ -1,0 +1,12 @@
+# Global gitignore file
+
+# OSX bullshit
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# Windows bullshit
+Thumbs.db
+Desktop.ini
+*.msi
