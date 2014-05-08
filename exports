@@ -23,8 +23,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 # android
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
+# homebrew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # java
