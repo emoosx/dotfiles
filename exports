@@ -18,6 +18,7 @@ export GREP_OPTIONS="--color=auto"
 # python
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
 export WORKON_HOME="$HOME/.virtualenvs"
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
 source /usr/local/bin/virtualenvwrapper.sh
 
 # android
@@ -28,7 +29,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
-
+export NVM_DIR=~/.nvm
 # java
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 

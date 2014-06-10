@@ -1,4 +1,4 @@
-plugins=(command-coloring pip fabric git mercurial battery command-aliases zsh_reload)
+plugins=(nyan nvm command-coloring pip fabric git mercurial battery command-aliases zsh_reload gitignore osx)
 
 for file in ~/code/dotfiles/{path,exports,localrc,aliases.zsh};
 do
