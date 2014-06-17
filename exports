@@ -30,10 +30,9 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # nvm
 source $(brew --prefix nvm)/nvm.sh
 export NVM_DIR=~/.nvm
+
 # java
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 # go
 export GOPATH=$HOME/.go
-
-nvm use default

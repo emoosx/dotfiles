@@ -11,3 +11,5 @@ unset file
 . `brew --prefix`/etc/profile.d/z.sh
 
 archey -c
+yosay "The quieter you become, the more you are able to hear"
+nvm use stable
