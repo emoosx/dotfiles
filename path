@@ -14,4 +14,6 @@ export PATH="$PATH:/Developer/usr/bin"                          # Apple Develope
 export PATH="$PATH:$GOPATH/bin"                                 # Go path
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"               # GOROOT-based
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH" # Postgres App
+
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH="/usr/local/opt/erlang/lib/erlang/man:$MANPATH"
