@@ -1,6 +1,6 @@
 # zsh
 export ZSH=$HOME/repo/oh-my-zsh
-export ZSH_THEME="arrow"
+export ZSH_THEME="khzaw"
 export CASE_SENSITIVIE="true"
 export DISABLE_CORRECTION="true"
 source $ZSH/oh-my-zsh.sh

@@ -1,4 +1,4 @@
-plugins=(nyan nvm pip fabric git mercurial battery command-aliases gitignore osx brew-cask django emoji-clock git-extras jsontools jump lol themes bower z web-search vundle)
+plugins=(nyan nvm pip fabric git mercurial battery command-aliases gitignore osx brew-cask django emoji-clock git-extras jsontools jump lol themes bower web-search vundle z colorize catimg colored-man frontend-search rand-quote zsh_reload)
 
 for file in ~/code/dotfiles/{path,exports,localrc,aliases.zsh};
 do
@@ -10,5 +10,6 @@ unset file
 . /Users/emoosx/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 archey -c
-nvm use stable
-yosay "The quieter you become, the more you are able to hear"
+nvm use latest
+q=`quote`
+yosay $q
