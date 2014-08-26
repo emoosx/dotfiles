@@ -1,6 +1,6 @@
 # zsh
 export ZSH=$HOME/repo/oh-my-zsh
-export ZSH_THEME="khzaw"
+export ZSH_THEME="lambda"
 export CASE_SENSITIVIE="true"
 export DISABLE_CORRECTION="true"
 source $ZSH/oh-my-zsh.sh
@@ -16,6 +16,7 @@ export EDITOR="mvim -f"
 export GREP_OPTIONS="--color=auto"
 
 # python
+export PYTHONPATH=/usr/local/bin/python
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
 export WORKON_HOME="$HOME/.virtualenvs"
 export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
