@@ -19,12 +19,13 @@
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 	# Clone a repository including all submodules
 	c = clone --recursive
+	g = grep --break --heading --line-number
 [web]
 	browser = open
 [help]
 	format = web
 [core]
-	excludesfile = /Users/emoosx/.gitignore_global
+	excludesfile = /Users/khzaw/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -36,3 +37,5 @@
 	smudge = git-media-smudge %f
 [push]
 	default = matching
+[grep]
+	lineNumber = true
