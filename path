@@ -7,7 +7,7 @@ export PATH="$PATH:/usr/local/go/bin"                               # go
 export PATH="$PATH:/usr/local/opt/ruby/bin"                         # ruby
 export PATH="$PATH:/usr/local/opt/mysql/bin"                        # mysql
 export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"         # GNU stuffs
-export PATH="$PATH:/usr/local/Cellar/go/1.2/libexec/bin"            # go
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # go
 export PATH="$PATH:/usr/local/heroku/bin"                           # heroku
 export PATH="$PATH:/usr/local/share/npm/bin"                        # Node
 export PATH="$PATH:/usr/local/smlnj/bin"                            # standard ML
@@ -16,6 +16,7 @@ export PATH="$PATH:/usr/texbin"                                     # LaTeX
 export PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
 export PATH="$PATH:$GOPATH/bin"                                     # Go path
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-based
+export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH" # Postgres App
 
 export MANPATH="$HOME/.opam/4.01.0/man"
