@@ -1,4 +1,4 @@
-source antigen/antigen.zsh
+source /Users/$(whoami)/code/dotfiles/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -23,7 +23,6 @@ antigen bundle web-search
 antigen bundle frontend-search
 antigen bundle colored-man
 antigen bundle battery
-antigen bundle command-aliases
 antigen bundle themes
 antigen bundle zsh_reload
 antigen bundle z
@@ -60,5 +59,3 @@ unset file
 . /Users/emoosx/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 nvm use latest > /dev/null 2> /dev/null
-q=`quote`
-yosay $q
