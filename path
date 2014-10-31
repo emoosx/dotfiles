@@ -18,6 +18,7 @@ export PATH="$PATH:$GOPATH/bin"                                     # Go path
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-based
 export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH" # Postgres App
+export PATH="/Applications/BB10 WebWorks SDK 2.2.0.15:$PATH"        # webworks
 
 export MANPATH="$HOME/.opam/4.01.0/man"
 export MANPATH="$MANPATH:/usr/local/share/man"
