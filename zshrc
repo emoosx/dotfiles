@@ -4,7 +4,7 @@ antigen use prezto
 antigen apply
 
 
-for file in ~/code/dotfiles/{exports,path,localrc,aliases.zsh};
+for file in ~/code/dotfiles/{exports,path,localrc,aliases.zsh,functions};
 do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done

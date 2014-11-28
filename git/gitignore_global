@@ -1,10 +1,6 @@
 # Compiled Python files
 *.pyc
 
-# Folder view configuration files
-.DS_Store
-Desktop.ini
-
 # Thumbnail cache files
 ._*
 Thumbs.db
@@ -12,3 +8,14 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# OSX bullshit
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# Windows bullshit
+Thumbs.db
+Desktop.ini
+*.msi
