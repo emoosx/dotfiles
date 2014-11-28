@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Copyright Kaung Htet Zaw
+=======
+Copyright Mathias Bynens <https://mathiasbynens.be/>
+>>>>>>> 4471e2732faede1d9b242cb547de8005578b3d10
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
