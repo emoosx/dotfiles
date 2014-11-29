@@ -87,11 +87,13 @@ brew install rhino
 brew install tree
 brew install webkit2png
 brew install zopfli
+brew install ctags
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
 brew install python
+brew install google-app-engine
 
 # Remove outdated versions from the cellar.
 brew cleanup
