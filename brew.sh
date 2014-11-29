@@ -70,14 +70,14 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
-brew install z
 
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
 brew install git
+brew install git-extras
+brew install hub
 brew install imagemagick --with-webp
-brew install lua
 brew install lynx
 brew install p7zip
 brew install pigz
@@ -88,12 +88,34 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 brew install ctags
+brew install z
+brew install archey
+brew install axel
+brew install cscope
+brew install apple-gcc42
+brew install cmake
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
 brew install python
 brew install google-app-engine
+brew install ocaml
+brew install opam
+brew install lua
+brew install luajit
+brew install erlang
+brew install scala
+brew install sbt
+brew install ghc
+brew install leiningen
+brew install ansible
+brew install docker
+brew install nginx
+brew install mysql
+brew install dart
+brew install rust
+brew install android-sdk
 
 # Remove outdated versions from the cellar.
 brew cleanup
