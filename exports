@@ -1,6 +1,16 @@
 # home
 export HOME="/Users/$(whoami)"
 
+# history
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+
+# lang
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 # MPI
 export MPICC="/usr/local/bin/mpicc"
 export MPIRUN="/usr/local/bin/mpirun"
@@ -9,6 +19,10 @@ export MPIRUN="/usr/local/bin/mpirun"
 export EDITOR="mvim -f"
 export ALTERNATE_EDITOR=""
 export GREP_OPTIONS="--color=auto"
+# don't clear the screen after quitting a manual page
+export MANPAGER="less -X"
+# highlight section titles in manual pages
+export LESS_TERMCAP_md="${yellow}"
 
 # python
 export PYTHONPATH=/usr/local/bin/python
@@ -38,4 +52,3 @@ export CAML_LD_LIBRARY_PATH="$HOME/.opam/4.01.0/lib/stublibs"
 export OPAMUTF8MSGS="1"
 export PERL5LIB="$HOME/.opam/4.01.0/lib/perl5"
 export OCAML_TOPLEVEL_PATH="$HOME/.opam/4.01.0/lib/toplevel"
-export HOMEBREW_KEEP_INFO=1
