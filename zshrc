@@ -1,7 +1,16 @@
-source /Users/$(whoami)/code/dotfiles/antigen/antigen.zsh
+source /Users/$(whoami)/Code/dotfiles/antigen/antigen.zsh
 
 antigen use prezto
 antigen apply
+
+# Source prezto
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+autoload -Uz promptinit
+promptinit
+prompt damoekri
 
 
 for file in ~/code/dotfiles/{exports,path,localrc,aliases.zsh,functions};
