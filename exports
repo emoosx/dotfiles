@@ -32,7 +32,7 @@ export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
 source $(brew --prefix)/bin/virtualenvwrapper.sh
 
 # android
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID=$HOME/Library/Android/sdk
 
 # homebrew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
