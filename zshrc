@@ -4,6 +4,10 @@ antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle git-extras
+antigen bundle git-flow
+antigen bundle git-hubflow
+antigen bundle git-prompt
+antigen bundle gitignore
 antigen bundle heroku
 antigen bundle pip
 antigen bundle command-not-found
@@ -14,6 +18,7 @@ antigen bundle history-substring-search
 antigen bundle osx
 antigen bundle themes
 antigen bundle zsh_reload
+antigen bundle web-search
 antigen theme pygmalion
 antigen apply
 
