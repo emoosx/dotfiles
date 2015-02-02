@@ -115,7 +115,6 @@ brew install nginx
 brew install mysql
 brew install dart
 brew install rust
-brew install android-sdk
 
 # Remove outdated versions from the cellar.
 brew cleanup
