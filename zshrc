@@ -19,8 +19,9 @@ antigen bundle osx
 antigen bundle themes
 antigen bundle zsh_reload
 antigen bundle web-search
-antigen theme pygmalion
+antigen theme pure
 antigen apply
+
 
 
 
