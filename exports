@@ -16,7 +16,7 @@ export MPICC="/usr/local/bin/mpicc"
 export MPIRUN="/usr/local/bin/mpirun"
 
 # misc
-export EDITOR="mvim -f"
+export EDITOR="vim"
 export ALTERNATE_EDITOR=""
 export GREP_OPTIONS="--color=auto"
 # don't clear the screen after quitting a manual page
