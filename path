@@ -1,4 +1,5 @@
 export PATH="$HOME/bin"
+export PATH="$PATH:/usr/texbin"                                     # LaTeX
 export PATH="$PATH:$HOME/.opam/4.02.1/bin"                          # OCaml
 export PATH="$PATH:$HOME/.opam/system/bin"                          # OCaml
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
@@ -12,7 +13,6 @@ export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # go
 export PATH="$PATH:/usr/local/share/npm/bin"                        # Node
 export PATH="$PATH:/usr/local/smlnj/bin"                            # standard ML
 export PATH="$PATH:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin"      # OSX built in
-export PATH="$PATH:/usr/texbin"                                     # LaTeX
 export PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
 export PATH="$PATH:$GOPATH/bin"                                     # Go path
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-based
