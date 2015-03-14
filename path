@@ -4,6 +4,7 @@ export PATH="$PATH:$HOME/.opam/4.02.1/bin"                          # OCaml
 export PATH="$PATH:$HOME/.opam/system/bin"                          # OCaml
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
 export PATH="$PATH:$HOME/.cabal/bin"                                # Haskell
+export PATH="$PATH:$HOME/.rbenv"                                    # Ruby
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"        # Android
 export PATH="$PATH:/usr/local/heroku/bin"                           # Heroku Toolbet
 export PATH="$PATH:/usr/local/go/bin"                               # go
@@ -17,7 +18,7 @@ export PATH="$PATH:/Developer/usr/bin"                              # Apple Deve
 export PATH="$PATH:$GOPATH/bin"                                     # Go path
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-based
 export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
-export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH" # Postgres App
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin" # Postgres App
 export PATH="/Applications/BB10 WebWorks SDK 2.2.0.15:$PATH"        # webworks
 export PATH="/Applications/Momentics.app/host_10_3_0_2702/darwin/x86/usr/bin:$PATH"
 
