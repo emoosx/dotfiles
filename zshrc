@@ -42,3 +42,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 function dn() {
   axel -n 30 -q $*
 }
+nvm use v0.10
