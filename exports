@@ -33,13 +33,11 @@ source $(brew --prefix)/bin/virtualenvwrapper.sh
 
 # android
 export ANDROID=$HOME/Library/Android/sdk
+export ANDROID_SDK="$ANDROID"
+export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK/platform-tools"
 
 # homebrew-cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-# nvm
-source $(brew --prefix nvm)/nvm.sh
-export NVM_DIR=~/.nvm
 
 # java
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
@@ -52,3 +50,4 @@ export CAML_LD_LIBRARY_PATH="$HOME/.opam/4.02.1/lib/stublibs:$HOME/.opam/system/
 export OPAMUTF8MSGS="1"
 export PERL5LIB="$HOME/.opam/4.02.1/lib/perl5:$HOME/.opam/system/lib/perl5"
 export OCAML_TOPLEVEL_PATH="$HOME/.opam/4.02.1/lib/toplevel:$HOME/.opam/system/lib/toplevel"
+export HELPDIR=/usr/local/share/zsh/help
