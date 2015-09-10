@@ -20,6 +20,7 @@ antigen bundle themes
 antigen bundle zsh_reload
 antigen bundle web-search
 antigen theme pure
+antigen bundle Tarrasch/zsh-bd
 antigen apply
 
 
@@ -34,7 +35,6 @@ unset file
 # OPAM configuration
 . /Users/emoosx/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-nvm use latest > /dev/null 2> /dev/null
 
 . `brew --prefix`/etc/profile.d/z.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -42,4 +42,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 function dn() {
   axel -n 30 -q $*
 }
-nvm use v0.10
+
+nvm use v0.12 > /dev/null 2> /dev/null
