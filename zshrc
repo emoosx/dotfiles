@@ -1,6 +1,5 @@
 fpath=( "$HOME/.zfunctions" $fpath )
 PURE_PROMPT_SYMBOL=λ
-
 source /Users/$(whoami)/Code/dotfiles/antigen/antigen.zsh
 
 antigen use oh-my-zsh
@@ -28,6 +27,8 @@ antigen bundle web-search
 antigen bundle sindresorhus/pure
 antigen bundle Tarrasch/zsh-bd
 antigen bundle jsontools
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 antigen apply
 
 

@@ -116,3 +116,4 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias reload="exec $SHELL -l"
 
 alias rm="nocorrect rm"
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
