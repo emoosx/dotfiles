@@ -51,6 +51,5 @@ function dn() {
   axel -n 30 -q $*
 }
 
-nvm use v0.12 > /dev/null 2> /dev/null
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+. $(brew --prefix nvm)/nvm.sh
+nvm use node > /dev/null 2> /dev/null
