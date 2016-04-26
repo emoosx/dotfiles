@@ -54,3 +54,4 @@ function dn() {
 
 . $(brew --prefix nvm)/nvm.sh
 nvm use node > /dev/null 2> /dev/null
+archey -c
