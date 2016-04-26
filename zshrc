@@ -1,6 +1,6 @@
 fpath=( "$HOME/.zfunctions" $fpath )
 PURE_PROMPT_SYMBOL=λ
-source /Users/$(whoami)/Code/dotfiles/antigen/antigen.zsh
+source $(brew --prefix)/share/antigen.zsh
 
 antigen use oh-my-zsh
 
