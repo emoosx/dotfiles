@@ -29,14 +29,6 @@ brew install gnu-sed --with-default-names
 # running `chsh`.
 brew install zsh
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
 
 # vim
 brew install macvim --with-lua --with-luajit --custom-icons --HEAD
@@ -45,59 +37,27 @@ brew install vim --override-system-vi --with-lua --with-luajit --HEAD
 # Install more recent versions of some OS X tools.
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install bfg
 brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
+brew install apple-gcc42
+brew install archey
+brew install axel
+brew install cmake
+brew install cscope
+brew install ctags
 brew install git
 brew install git-extras
 brew install hub
 brew install imagemagick --with-webp
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
 brew install rename
-brew install rhino
 brew install tree
-brew install webkit2png
-brew install zopfli
-brew install ctags
 brew install z
-brew install archey
-brew install axel
-brew install cscope
-brew install apple-gcc42
-brew install cmake
 
-# Install Node.js. Note: this installs `npm` too, using the recommended
-# installation method.
-brew install node
+# Programming Languages
+brew install nvm
 brew install python
 brew install google-app-engine
 brew install ocaml
