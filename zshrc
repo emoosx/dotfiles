@@ -28,14 +28,13 @@ antigen bundle sindresorhus/pure
 antigen bundle Tarrasch/zsh-bd
 antigen bundle jsontools
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
 antigen apply
 
 
 
 
 
-for file in ~/code/dotfiles/{exports,path,localrc,aliases.zsh,functions};
+for file in ~/Dev/dotfiles/{exports,path,localrc,aliases.zsh,functions};
 do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
