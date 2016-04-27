@@ -1,6 +1,6 @@
 [user]
 	name = Kaung Htet Zaw
-	email = emoosx@gmail.com
+	email = me@kaunghtet.xyz
 [credential]
 	helper = osxkeychain
 [github]
@@ -12,20 +12,50 @@
 [alias]
 	co = checkout
 	ci = commit
-	st = status
+	st = status -s
 	br = branch
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit --all
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
+	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 	# Clone a repository including all submodules
 	c = clone --recursive
 	g = grep --break --heading --line-number
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+	amend = commit --amend --resue-message=HEAD
+	# List contributors with number of commits
+	contributors = shortlog --summary --numbered
+	# Credit an author on the latest commit
+	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+	# Remove branches that have already been merged with master
+	# a.k.a. ‘delete merged’
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+	# Find branches containing commit
+	fb = "!f() { git branch -a --contains $1; }; f"
+
+	# Find tags containing commit
+	ft = "!f() { git describe --always --contains $1; }; f"
+
+	# Find commits by source code
+	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+
+	# Find commits by commit message
+	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 [web]
 	browser = open
+[apply]
+	whitespace = fix
 [help]
 	format = web
 [core]
-	excludesfile = /Users/khzaw/.gitignore_global
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	trustctime = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -48,3 +78,28 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[diff]
+	renames = copies
+[help]
+	autocorrect = 1
+[merge]
+	log = true
+[url "git@github.com:"]
+
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+
+	insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+
+	insteadOf = "gist:"
