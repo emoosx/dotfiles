@@ -19,6 +19,7 @@ export PATH="$PATH:/Developer/usr/bin"                              # Apple Deve
 export PATH="$PATH:$GOPATH/bin"                                     # Go path
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-based
 export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
+export PATH="$PATH:/usr/local/m-cli"																# Swiss army knife
 export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH" # Postgres App
 export PATH="/Applications/BB10 WebWorks SDK 2.2.0.15:$PATH"        # webworks
 export PATH="/Applications/Momentics.app/host_10_3_0_2702/darwin/x86/usr/bin:$PATH"

@@ -28,6 +28,7 @@ antigen bundle sindresorhus/pure
 antigen bundle Tarrasch/zsh-bd
 antigen bundle jsontools
 antigen bundle mafredri/zsh-async
+antigen bundle django
 antigen apply
 
 
@@ -54,3 +55,14 @@ function dn() {
 . $(brew --prefix nvm)/nvm.sh
 nvm use node > /dev/null 2> /dev/null
 archey -c
+
+
+# ~/bin/startup-gpg-agent.sh
+
+# if [ -f "${HOME}/.gpg-agent-info" ]; then
+  # . "${HOME}/.gpg-agent-info"
+  # export GPG_AGENT_INFO
+  # export SSH_AUTH_SOCK
+# fi
+# GPG_TTY=$(tty)
+# export GPG_TTY
