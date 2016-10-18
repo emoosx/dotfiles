@@ -101,3 +101,5 @@
   autosquash = true
 [fetch]
   prune = true
+[commit]
+	template = /Users/khz/.stCommitMsg

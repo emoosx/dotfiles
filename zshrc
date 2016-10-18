@@ -1,41 +1,17 @@
-fpath=( "$HOME/.zfunctions" $fpath )
-PURE_PROMPT_SYMBOL=λ
-source $(brew --prefix)/share/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
-
-antigen bundle battery
-antigen bundle rand-quote
 antigen bundle git
-antigen bundle git-extras
-antigen bundle git-flow
-antigen bundle git-hubflow
-antigen bundle git-prompt
-antigen bundle gitignore
-antigen bundle gitfast
-antigen bundle heroku
 antigen bundle pip
 antigen bundle command-not-found
-antigen bundle colorize
-antigen bundle history
-antigen bundle history-substring-search
-antigen bundle osx
-antigen bundle npm
-antigen bundle themes
-antigen bundle zsh_reload
-antigen bundle web-search
-antigen bundle sindresorhus/pure
-antigen bundle Tarrasch/zsh-bd
-antigen bundle jsontools
-antigen bundle mafredri/zsh-async
-antigen bundle django
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions src
+antigen bundle yardnsm/blox-zsh-theme
 antigen apply
 
+source $(brew --prefix)/bin/virtualenvwrapper.sh
 
-
-
-
-for file in ~/Dev/dotfiles/{exports,path,localrc,aliases.zsh,functions};
+for file in ~/Code/dotfiles/{exports,path,localrc,aliases.zsh,functions};
 do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
@@ -52,17 +28,16 @@ function dn() {
   axel -n 30 -q $*
 }
 
-. $(brew --prefix nvm)/nvm.sh
-nvm use node > /dev/null 2> /dev/null
+source $(brew --prefix nvm)/nvm.sh
 archey -c
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/khz/Desktop/.google-cloud/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/khz/Desktop/.google-cloud/google-cloud-sdk/path.zsh.inc'
+fi
 
-# ~/bin/startup-gpg-agent.sh
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/khz/Desktop/.google-cloud/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/khz/Desktop/.google-cloud/google-cloud-sdk/completion.zsh.inc'
+fi
 
-# if [ -f "${HOME}/.gpg-agent-info" ]; then
-  # . "${HOME}/.gpg-agent-info"
-  # export GPG_AGENT_INFO
-  # export SSH_AUTH_SOCK
-# fi
-# GPG_TTY=$(tty)
-# export GPG_TTY
