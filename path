@@ -13,6 +13,7 @@ export PATH="$PATH:/usr/local/opt/mysql/bin"                        # mysql
 export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"         # GNU stuffs
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # go
 export PATH="$PATH:/usr/local/share/npm/bin"                        # Node
+export PATH="$PATH:`yarn global bin`"
 export PATH="$PATH:/usr/local/smlnj/bin"                            # standard ML
 export PATH="$PATH:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin"      # OSX built in
 export PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
