@@ -28,7 +28,6 @@ function dn() {
   axel -n 30 -q $*
 }
 
-source $(brew --prefix nvm)/nvm.sh
 archey -c
 
 # The next line updates PATH for the Google Cloud SDK.

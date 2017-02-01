@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "indent": [2, "space"]
+  },
+  "settings": {
+    "ecmascript": 6,
+    "jsx": true
+  }
+}

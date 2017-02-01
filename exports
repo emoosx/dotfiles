@@ -47,3 +47,5 @@ export OPAMUTF8MSGS="1"
 export PERL5LIB="$HOME/.opam/4.02.1/lib/perl5:$HOME/.opam/system/lib/perl5"
 export OCAML_TOPLEVEL_PATH="$HOME/.opam/4.02.1/lib/toplevel:$HOME/.opam/system/lib/toplevel"
 export HELPDIR=/usr/local/share/zsh/help
+
+export HOMEBREW_GITHUB_API="9c7da4e4109530da487ce11e8b7c1ebe8afe232a"
