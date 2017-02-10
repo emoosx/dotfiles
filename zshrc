@@ -4,14 +4,22 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle command-not-found
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-completions src
-antigen bundle yardnsm/blox-zsh-theme
+
+antigen bundle colorize
+antigen bundle history
+antigen bundle osx
+antigen bundle npm
+antigen bundle themes
+antigen bundle zsh_reload
+antigen bundle web-search
+antigen bundle Tarrasch/zsh-bd
+antigen bundle jsontools
+antigen bundle mafredri/zsh-async
+antigen bundle django
+antigen theme miloshadzic
 antigen apply
 
-source $(brew --prefix)/bin/virtualenvwrapper.sh
-
-for file in ~/Code/dotfiles/{exports,path,localrc,aliases.zsh,functions};
+for file in ~/Dev/dotfiles/{exports,localrc,aliases.zsh,functions};
 do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
@@ -19,7 +27,6 @@ unset file
 
 # OPAM configuration
 . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
 
 . `brew --prefix`/etc/profile.d/z.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -39,4 +46,3 @@ fi
 if [ -f /Users/khz/Desktop/.google-cloud/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/khz/Desktop/.google-cloud/google-cloud-sdk/completion.zsh.inc'
 fi
-
