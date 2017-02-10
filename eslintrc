@@ -8,7 +8,6 @@
   },
   "extends": "airbnb",
   "rules": {
-    "indent": [2, "space"]
   },
   "settings": {
     "ecmascript": 6,
