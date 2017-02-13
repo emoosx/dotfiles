@@ -137,8 +137,8 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '("Fira Code"
+                               :size 15
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -307,11 +307,16 @@ you should place your code here."
   (setq powerline-default-separator 'arrow-fade)
   (setq-default
    js2-basic-offset 2
+   js-indent-level 2
    css-indent-offset 2
    web-mode-markup-indent-offset 2
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2
    web-mode-attr-indent-offset 2)
+  (setq mouse-wheel-scroll-amount '(2 ((shift) . 1)))
+  (setq mouse-wheel-progressive-speed nil)
+  (setq mouse-wheel-follow-mouse 't)
+  (setq-default evil-escape-key-sequence "kj")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
