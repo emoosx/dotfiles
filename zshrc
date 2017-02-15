@@ -19,7 +19,7 @@ antigen bundle django
 antigen theme miloshadzic
 antigen apply
 
-for file in ~/Dev/dotfiles/{exports,localrc,aliases.zsh,functions};
+for file in ~/Dev/dotfiles/{localrc,aliases.zsh,functions};
 do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
