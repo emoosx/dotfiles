@@ -19,3 +19,7 @@ Thumbs.db
 Thumbs.db
 Desktop.ini
 *.msi
+
+node_modules
+*.pyc
+.dir-locals.el
