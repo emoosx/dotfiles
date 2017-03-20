@@ -30,6 +30,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # android
 export ANDROID=$HOME/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_SDK="$ANDROID"
 export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK/platform-tools"
 
