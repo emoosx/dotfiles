@@ -21,5 +21,9 @@ Desktop.ini
 *.msi
 
 node_modules
-*.pyc
 .dir-locals.el
+
+.idea
+.vscode
+
+
