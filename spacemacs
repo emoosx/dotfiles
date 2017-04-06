@@ -356,6 +356,12 @@ you should place your code here."
   (setq mouse-wheel-progressive-speed nil)
   (setq mouse-wheel-follow-mouse 't)
   (setq-default evil-escape-key-sequence "kj")
+
+  ;; Prolog mode
+  (autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+  (autoload 'prolog-mode "prolog" "Major mode for editing prolog programs." t)
+  (setq prolog-system 'swi)  ;; prolog-system below for possible values
+  (add-to-list 'auto-mode-alist '("\\.pl\\'" . prolog-mode))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
