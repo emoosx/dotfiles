@@ -27,6 +27,7 @@
 	ci = commit
 	st = status -s
 	br = branch
+	undo = reset --soft HEAD^
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit --all
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -81,6 +82,7 @@
 	required = true
 [push]
 	default = matching
+	followTags = true
 [grep]
 	lineNumber = true
 [filter "hawser"]
@@ -97,6 +99,7 @@
 	autocorrect = 1
 [merge]
 	log = true
+	ff = only
 [rebase]
   autosquash = true
 [fetch]
