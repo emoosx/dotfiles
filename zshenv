@@ -77,8 +77,6 @@ export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-bas
 export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
 export PATH="$PATH:/usr/local/m-cli"																# Swiss army knife
 export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH" # Postgres App
-export PATH="/Applications/BB10 WebWorks SDK 2.2.0.15:$PATH"        # webworks
-export PATH="/Applications/Momentics.app/host_10_3_0_2702/darwin/x86/usr/bin:$PATH"
 
 export MANPATH="$HOME/.opam/4.02.1/man:$HOME/.opam/system/man"
 export MANPATH="$MANPATH:/usr/local/share/man"
@@ -89,4 +87,3 @@ export MANPATH="$MANPATH:/Users/$(whoami)/.nvm/v0.11.13/share/man"
 export MANPATH="$MANPATH:/usr/local/opt/erlang/lib/erlang/man"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANPATH="$MANPATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Man"
-

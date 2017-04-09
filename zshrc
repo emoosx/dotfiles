@@ -4,19 +4,15 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle command-not-found
-
 antigen bundle colorize
 antigen bundle history
 antigen bundle osx
-antigen bundle npm
-antigen bundle themes
 antigen bundle zsh_reload
 antigen bundle web-search
 antigen bundle Tarrasch/zsh-bd
 antigen bundle jsontools
-antigen bundle mafredri/zsh-async
 antigen bundle django
-antigen theme miloshadzic
+antigen theme lambda
 antigen apply
 
 for file in ~/Dev/dotfiles/{localrc,aliases.zsh,functions};
