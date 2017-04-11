@@ -23,7 +23,7 @@ values."
    dotspacemacs-enable-lazy-installation 'unused
    ;; If non-nil then Spacemacs will ask for confirmation before installing
    ;; a layer lazily. (default t)
-   dotspacemacs-ask-for-lazy-installation t
+   dotspacemacs-ask-for-lazy-installation nil
    ;; If non-nil layers with lazy install support are lazy installed.
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
@@ -145,34 +145,12 @@ values."
    ;; True if the home buffer should respond to resize events.
    dotspacemacs-startup-buffer-responsive t
    ;; Default major mode of the scratch buffer (default `text-mode')
-   dotspacemacs-scratch-mode 'text-mode
+   dotspacemacs-scratch-mode 'org-mode
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(minimal-light
-                         monochrome-bright
-                         twilight-anti-bright
-                         jbeans
-                         wombat
-                         birds-of-paradise-plus
-                         junio
-                         seti
-                         badwolf
-                         subatomic
-                         graham
-                         twilight
-                         zen-and-art
-                         tango-2
-                         jazz
-                         monokai
-                         mustang
-                         niflheim
-                         lush
-                         flatland
-                         brin
-                         material
-                         material-light
-                         spacegray)
+                         twilight-anti-bright)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
@@ -345,7 +323,6 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (setq powerline-default-separator 'arrow-fade)
   (setq-default
    js2-basic-offset 2
    js-indent-level 2
