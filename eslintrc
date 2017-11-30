@@ -8,6 +8,7 @@
   },
   "extends": "airbnb",
   "rules": {
+    "comma-dangle": ["error", "never"],
   },
   "settings": {
     "ecmascript": 6,

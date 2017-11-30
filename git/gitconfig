@@ -59,6 +59,7 @@
 
 	# Find commits by commit message
 	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+	standup = log --author=\"Kaung Htet Zaw\" --oneline --no-merges --since=1.day
 [web]
 	browser = open
 [apply]
