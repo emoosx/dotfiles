@@ -22,10 +22,10 @@ export MANPAGER="less -X"
 export LESS_TERMCAP_md="${yellow}"
 
 # python
-export PYTHONPATH=/usr/local/bin/python
+export PYTHONPATH=/usr/local/bin/python3
 export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
 export WORKON_HOME="$HOME/.virtualenvs"
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
 source /usr/local/bin/virtualenvwrapper.sh
 
 # android
@@ -61,6 +61,7 @@ export PATH="$PATH:$HOME/.opam/system/bin"                          # OCaml
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
 export PATH="$PATH:/usr/local/opt/python@2/libexec/bin"             # Python
 export PATH="$PATH:/usr/local/opt/python@2/bin"                     # Python
+export PATH="$PATH:/usr/local/opt/python/libexec/bin"				# Python
 export PATH="$PATH:$HOME/.cabal/bin"                                # Haskell
 export PATH="$PATH:$HOME/.rbenv"                                    # Ruby
 export PATH="$PATH:$HOME/Library/Android/sdk/tools"									# Android
@@ -79,8 +80,7 @@ export PATH="$PATH:/Developer/usr/bin"                              # Apple Deve
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-based
 export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
 export PATH="$PATH:/usr/local/m-cli"																# Swiss army knife
-export PATH="$PATH:/usr/local/Caskroom/google-cloud"
-export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH" # Postgres App
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # Postgres App
 
 export MANPATH="$HOME/.opam/4.02.1/man:$HOME/.opam/system/man"
 export MANPATH="$MANPATH:/usr/local/share/man"
