@@ -22,11 +22,11 @@ export MANPAGER="less -X"
 export LESS_TERMCAP_md="${yellow}"
 
 # python
-export PYTHONPATH=/usr/local/bin/python3
-export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
-export WORKON_HOME="$HOME/.virtualenvs"
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
-source /usr/local/bin/virtualenvwrapper.sh
+# export PYTHONPATH=/usr/local/bin/python3
+# export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
+# export WORKON_HOME="$HOME/.virtualenvs"
+# export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # android
 export ANDROID=$HOME/Library/Android/sdk
@@ -52,16 +52,14 @@ export LDFLAGS=-L/usr/local/opt/openssl/lib
 export CPPFLAGS=-I/usr/local/opt/openssl/include
 export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 
-
+# PATH
 export PATH="$HOME/bin"
 export PATH="$PATH:$HOME/.fastlane/bin"															# Fastlane
 export PATH="$PATH:/usr/texbin"                                     # LaTeX
 export PATH="$PATH:$HOME/.opam/4.02.1/bin"                          # OCaml
 export PATH="$PATH:$HOME/.opam/system/bin"                          # OCaml
+export PATH="$PATH:$HOME/.local/bin"                                # Pipsi
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
-export PATH="$PATH:/usr/local/opt/python@2/libexec/bin"             # Python
-export PATH="$PATH:/usr/local/opt/python@2/bin"                     # Python
-export PATH="$PATH:/usr/local/opt/python/libexec/bin"				# Python
 export PATH="$PATH:$HOME/.cabal/bin"                                # Haskell
 export PATH="$PATH:$HOME/.rbenv"                                    # Ruby
 export PATH="$PATH:$HOME/Library/Android/sdk/tools"									# Android
