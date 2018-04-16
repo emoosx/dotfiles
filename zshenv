@@ -27,6 +27,7 @@ export LESS_TERMCAP_md="${yellow}"
 # export WORKON_HOME="$HOME/.virtualenvs"
 # export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
 # source /usr/local/bin/virtualenvwrapper.sh
+export PYENV_ROOT="$HOME/.pyenv"
 
 # android
 export ANDROID=$HOME/Library/Android/sdk
@@ -56,8 +57,9 @@ export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 export PATH="$HOME/bin"
 export PATH="$PATH:$HOME/.fastlane/bin"															# Fastlane
 export PATH="$PATH:/usr/texbin"                                     # LaTeX
-export PATH="$PATH:$HOME/.opam/4.02.1/bin"                          # OCaml
-export PATH="$PATH:$HOME/.opam/system/bin"                          # OCaml
+# export PATH="$PATH:$HOME/.opam/4.02.1/bin"                          # OCaml
+# export PATH="$PATH:$HOME/.opam/system/bin"                          # OCaml
+export PATH="$PATH:$PYENV_ROOT/bin"
 export PATH="$PATH:$HOME/.local/bin"                                # Pipsi
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
 export PATH="$PATH:$HOME/.cabal/bin"                                # Haskell
@@ -89,3 +91,7 @@ export MANPATH="$MANPATH:/Users/$(whoami)/.nvm/v0.11.13/share/man"
 export MANPATH="$MANPATH:/usr/local/opt/erlang/lib/erlang/man"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANPATH="$MANPATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Man"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
