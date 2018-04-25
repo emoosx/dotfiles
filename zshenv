@@ -78,20 +78,44 @@ export PATH="$PATH:/usr/local/smlnj/bin"                            # standard M
 export PATH="$PATH:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin"      # OSX built in
 export PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # GOROOT-based
-export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
-export PATH="$PATH:/usr/local/m-cli"																# Swiss army knife
+# export PATH="$PATH:/usr/local/cuda/bin"                             # CUDA
+# export PATH="$PATH:/usr/local/m-cli"																# Swiss army knife
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # Postgres App
 
-export MANPATH="$HOME/.opam/4.02.1/man:$HOME/.opam/system/man"
+# export MANPATH="$HOME/.opam/4.02.1/man:$HOME/.opam/system/man"
 export MANPATH="$MANPATH:/usr/local/share/man"
 export MANPATH="$MANPATH:/usr/share/man"
 export MANPATH="$MANPATH:/opt/X11/share/man"
 export MANPATH="$MANPATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Man"
-export MANPATH="$MANPATH:/Users/$(whoami)/.nvm/v0.11.13/share/man"
 export MANPATH="$MANPATH:/usr/local/opt/erlang/lib/erlang/man"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANPATH="$MANPATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Man"
 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f $HOME/Desktop/.google-cloud/google-cloud-sdk/path.zsh.inc ]; then
+  source '$HOME/Desktop/.google-cloud/google-cloud-sdk/path.zsh.inc'
 fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f $HOME/Desktop/.google-cloud/google-cloud-sdk/completion.zsh.inc ]; then
+  source '$HOME/Desktop/.google-cloud/google-cloud-sdk/completion.zsh.inc'
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f $HOME/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . $HOME/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f $HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . $HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+
+
+if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+. `brew --prefix`/etc/profile.d/z.sh
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
