@@ -5,10 +5,8 @@ antigen bundle git
 antigen bundle pip
 antigen bundle colorize
 antigen bundle history
-antigen bundle osx
 antigen bundle zsh_reload
 antigen bundle Tarrasch/zsh-bd
-antigen bundle jsontools
 antigen theme lambda
 antigen apply
 
