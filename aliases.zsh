@@ -89,3 +89,5 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias reload="exec $SHELL -l"
 
 alias rm="nocorrect rm"
+
+alias prettyjson="python -m json.tool"

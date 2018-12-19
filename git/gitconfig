@@ -60,6 +60,7 @@
 	# Find commits by commit message
 	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 	standup = log --author=\"Kaung Htet Zaw\" --oneline --no-merges --since=1.day
+  dif = diff -w --word-diff-regex=[^[:space:]]
 [web]
 	browser = open
 [apply]
@@ -71,6 +72,7 @@
 	attributesfile = ~/.gitattributes
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 	trustctime = false
+	commitGraph = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -108,3 +110,5 @@
   prune = true
 [commit]
 	template = ~/.stCommitMsg
+[rerere]
+	enabled = true

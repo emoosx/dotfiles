@@ -11,6 +11,8 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 # lang
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
 # misc
 export EDITOR="vim"
@@ -35,13 +37,16 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 # go
 export GOPATH=$HOME/.go
 
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
 # PATH
 export PATH="$HOME/bin"
+export PATH="$PATH:$PYENV_ROOT/bin"
 export PATH="$PATH:$HOME/.fastlane/bin"															# Fastlane
 export PATH="$PATH:/usr/texbin"                                     # LaTeX
-export PATH="$PATH:$PYENV_ROOT/bin"
 export PATH="$PATH:$HOME/.local/bin"                                # Pipsi
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
+export PATH="$PATH:/usr/local/opt/openssl/bin"
 export PATH="$PATH:$HOME/.cabal/bin"                                # Haskell
 export PATH="$PATH:$HOME/.rbenv"                                    # Ruby
 export PATH="$PATH:$HOME/Library/Android/sdk/tools"									# Android
