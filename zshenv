@@ -1,3 +1,5 @@
+setopt no_global_rcs
+
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 # home
 export HOME="/Users/$(whoami)"
