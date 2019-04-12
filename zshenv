@@ -26,6 +26,7 @@ export LESS_TERMCAP_md="${yellow}"
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
 # android
 export ANDROID=$HOME/Library/Android/sdk
