@@ -13,8 +13,9 @@ export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 # lang
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export LDFLAGS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/zlib/include -L/usr/local/opt/sqlite/include"
+
 
 # misc
 export EDITOR="vim"
