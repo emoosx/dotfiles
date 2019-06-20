@@ -1,6 +1,7 @@
 [user]
 	name = Kaung Htet Zaw
 	email = me@kaunghtet.xyz
+	signingkey = 475D8C1DC2D4C9AC
 [credential]
 	helper = osxkeychain
 [github]
@@ -75,7 +76,7 @@
 	commitGraph = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -110,5 +111,6 @@
   prune = true
 [commit]
 	template = ~/.stCommitMsg
+	gpgsign = true
 [rerere]
 	enabled = true
