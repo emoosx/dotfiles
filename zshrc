@@ -21,7 +21,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source '/usr/local/Cellar/pyenv/1.2.12/libexec/../completions/pyenv.zsh'
+export PYENV_VERSION="$(pyenv -v | awk 'NF{ print $NF }')"
+source "/usr/local/Cellar/pyenv/$PYENV_VERSION/libexec/../completions/pyenv.zsh"
 command pyenv rehash 2>/dev/null
 pyenv() {
   local command

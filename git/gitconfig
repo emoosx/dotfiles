@@ -106,7 +106,7 @@
 [help]
 	autocorrect = 1
 [merge]
-	log = true
+	log = 100
 	ff = only
 [rebase]
   autosquash = true
