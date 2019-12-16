@@ -5,6 +5,11 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle gitignore
+antigen bundle pipenv
+antigen bundle pyenv
+antigen bundle yarn
+antigen bundle github
 antigen bundle pip
 antigen bundle colorize
 antigen bundle history
@@ -21,8 +26,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PYENV_VERSION="$(pyenv -v | awk 'NF{ print $NF }')"
-source "/usr/local/Cellar/pyenv/$PYENV_VERSION/libexec/../completions/pyenv.zsh"
+export v="$(pyenv -v | awk 'NF{ print $NF }')"
+source "/usr/local/Cellar/pyenv/$v/libexec/../completions/pyenv.zsh"
 command pyenv rehash 2>/dev/null
 pyenv() {
   local command
@@ -40,3 +45,6 @@ pyenv() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
+
+eval "$(starship init zsh)"

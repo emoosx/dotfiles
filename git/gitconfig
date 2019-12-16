@@ -1,7 +1,6 @@
 [user]
 	name = Kaung Htet Zaw
 	email = me@kaunghtet.xyz
-	signingkey = 475D8C1DC2D4C9AC
 [credential]
 	helper = osxkeychain
 [github]
@@ -106,14 +105,15 @@
 [help]
 	autocorrect = 1
 [merge]
-	log = 100
+	log = 10000
 	ff = only
 [rebase]
   autosquash = true
 [fetch]
   prune = true
-[commit]
-	template = ~/.stCommitMsg
-	gpgsign = true
 [rerere]
 	enabled = true
+[pull]
+	rebase = preserve
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
