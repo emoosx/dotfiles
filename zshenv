@@ -37,11 +37,11 @@ export ANDROID_SDK="$ANDROID"
 export ANDROID_PLATFORM_TOOLS="$ANDROID_SDK/platform-tools"
 
 # java
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # go
 export GOPATH=$HOME/.go
-
+export GO111MODULE=on
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # PATH
@@ -69,6 +69,7 @@ export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"         # GNU stuffs
 export PATH="$PATH:/bin:/sbin:/opt/X11/bin"                         # OSX built in
 export PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
 export PATH="$PATH:/usr/local/Cellar/smlnj/110.84/libexec/bin"      # smlnj
+#export PATH="$PATH:/usr/local/opt/terraform@0.12/bin"               # terraform
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # Postgres App
 
 export MANPATH="$MANPATH:/usr/local/share/man"

@@ -48,3 +48,9 @@ pyenv() {
 source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
 
 eval "$(starship init zsh)"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+export PATH="/usr/local/opt/terraform@0.13/bin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
