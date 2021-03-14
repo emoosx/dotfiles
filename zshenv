@@ -65,6 +65,7 @@ export PATH="$PATH:/usr/local/go/bin"                               # Go
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # Go
 export PATH="$PATH:$GOPATH/bin"                                     # Go path
 export PATH="$PATH:/usr/local/opt/mysql/bin"                        # mysql
+export PATH="$PATH:/usr/local/smlnj/bin"                            # smlnj
 export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"         # GNU stuffs
 export PATH="$PATH:/bin:/sbin:/opt/X11/bin"                         # OSX built in
 export PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
