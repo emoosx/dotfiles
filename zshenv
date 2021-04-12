@@ -47,6 +47,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 # PATH
 unset PATH
 export PATH="$HOME/bin"
+export PATH="$HOME/bin/sessionmanager-bundle/bin"
 export PATH="$PATH:$PYENV_ROOT/shims"
 export PATH="$PATH:$HOME/.fastlane/bin"															# Fastlane
 export PATH="$PATH:/usr/texbin"                                     # LaTeX
