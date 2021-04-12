@@ -1,6 +1,5 @@
 setopt no_global_rcs
 
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 # home
 export HOME="/Users/$(whoami)"
 
@@ -15,7 +14,6 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LDFLAGS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/zlib/include -L/usr/local/opt/sqlite/include"
-
 
 # misc
 export EDITOR="vim"
@@ -46,39 +44,41 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # PATH
 unset PATH
-export PATH="$HOME/bin"
-export PATH="$PATH:$PYENV_ROOT/shims"
-export PATH="$PATH:$HOME/.fastlane/bin"															# Fastlane
-export PATH="$PATH:/usr/texbin"                                     # LaTeX
-export PATH="$PATH:$HOME/.local/bin"                                # Pipsi
-export PATH="$PATH:/usr/local/opt/sqlite/bin"
-export PATH="$PATH:/usr/local/opt/imagemagick@6/bin"
-export PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
-export PATH="$PATH:/usr/local/opt/openssl/bin"
-export PATH="$PATH:/usr/bin:/usr/sbin"
-export PATH="$PATH:$HOME/.cabal/bin"                                # Haskell
-export PATH="$PATH:$HOME/.rbenv"                                    # Ruby
-export PATH="$PATH:$HOME/Library/Android/sdk/tools"	                # Android
-export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"        # Android
-export PATH="$PATH:/usr/local/heroku/bin"                           # Heroku Toolbet
-export PATH="$PATH:/usr/local/go/bin"                               # Go
-export PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # Go
-export PATH="$PATH:$GOPATH/bin"                                     # Go path
-export PATH="$PATH:/usr/local/opt/mysql/bin"                        # mysql
-export PATH="$PATH:/usr/local/smlnj/bin"                            # smlnj
-export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"         # GNU stuffs
-export PATH="$PATH:/bin:/sbin:/opt/X11/bin"                         # OSX built in
-export PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
-export PATH="$PATH:/usr/local/Cellar/smlnj/110.84/libexec/bin"      # smlnj
+PATH="$HOME/bin"
+PATH="$PATH:$PYENV_ROOT/shims"
+PATH="$PATH:$HOME/.fastlane/bin"															# Fastlane
+PATH="$PATH:/usr/texbin"                                     # LaTeX
+PATH="$PATH:$HOME/.local/bin"                                # Pipsi
+PATH="$PATH:/usr/local/opt/sqlite/bin"
+PATH="$PATH:/usr/local/opt/imagemagick@6/bin"
+PATH="$PATH:/usr/local/bin:/usr/local/sbin"                  # homebrew
+PATH="$PATH:/usr/local/opt/openssl/bin"
+PATH="$PATH:/usr/bin:/usr/sbin"
+PATH="$PATH:$HOME/.cabal/bin"                                # Haskell
+PATH="$PATH:$HOME/.rbenv"                                    # Ruby
+PATH="$PATH:$HOME/Library/Android/sdk/tools"	                # Android
+PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"        # Android
+PATH="$PATH:/usr/local/heroku/bin"                           # Heroku Toolbet
+PATH="$PATH:/usr/local/go/bin"                               # Go
+PATH="$PATH:/usr/local/opt/go/libexec/bin"                   # Go
+PATH="$PATH:$GOPATH/bin"                                     # Go path
+PATH="$PATH:/usr/local/opt/mysql/bin"                        # mysql
+PATH="$PATH:/usr/local/smlnj/bin"                            # smlnj
+PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"         # GNU stuffs
+PATH="$PATH:/bin:/sbin:/opt/X11/bin"                         # OSX built in
+PATH="$PATH:/Developer/usr/bin"                              # Apple Developer
+PATH="$PATH:/usr/local/Cellar/smlnj/110.84/libexec/bin"      # smlnj
+PATH="$PATH:/usr/local/opt/openjdk/bin"
+PATH="$PATH:/usr/local/opt/openssl@1.1/bin"
 #export PATH="$PATH:/usr/local/opt/terraform@0.12/bin"               # terraform
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH" # Postgres App
 
-export MANPATH="$MANPATH:/usr/local/share/man"
-export MANPATH="$MANPATH:/usr/share/man"
-export MANPATH="$MANPATH:/opt/X11/share/man"
-export MANPATH="$MANPATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Man"
-export MANPATH="$MANPATH:/usr/local/opt/erlang/lib/erlang/man"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+MANPATH="$MANPATH:/usr/local/share/man"
+MANPATH="$MANPATH:/usr/share/man"
+MANPATH="$MANPATH:/opt/X11/share/man"
+MANPATH="$MANPATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Man"
+MANPATH="$MANPATH:/usr/local/opt/erlang/lib/erlang/man"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANPATH="$MANPATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Man"
 
 export NVM_LAZY_LOAD=true
@@ -94,8 +94,5 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f $HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . $HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
-
-
-. `brew --prefix`/etc/profile.d/z.sh
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

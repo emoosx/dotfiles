@@ -244,3 +244,9 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# time shell load time
+function timezsh() {
+	shell=${1-$SHELL}
+	for i in $(seq 0 10); do /usr/bin/time $shell -i -c exit; done
+}
