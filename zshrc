@@ -43,3 +43,20 @@ miniplug plugin 'zsh-users/zsh-autosuggestions'
 miniplug plugin 'zdharma/fast-syntax-highlighting'
 miniplug theme 'dracula/zsh'
 miniplug load
+
+export AWS_SDK_LOAD_CONFIG=1
+
+export HISTFILE=~/.zsh_history
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+setopt INC_APPEND_HISTORY
+export HISTTIMEFORMAT="[%F %T] "
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+
+# hstr --show-configuration >> ~/.zshrc
+# # HSTR configuration - add this to ~/.zshrc
+# alias hh=hstr                    # hh to be alias for hstr
+# setopt histignorespace           # skip cmds w/ leading space from history
+# export HSTR_CONFIG=hicolor       # get more colors
+# bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
